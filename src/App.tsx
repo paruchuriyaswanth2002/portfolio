@@ -430,7 +430,7 @@ export default function App() {
 
                 <MagneticButton>
                   <a
-                    href="https://drive.google.com/file/d/1zOXWRK8AHeKTLZASXto5FKfu8oACZnsD/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1HA7_1cZpVXD-_zU486qX5JnUHZSMQScO/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     download
