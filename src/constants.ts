@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   email: "paruchuriyaswanth2002@gmail.com",
   phone: "+91 9949493894",
   linkedin: "https://www.linkedin.com/in/yaswanth-paruchuri-2b3472256",
-  github: "https://github.com", // Placeholder as not explicitly in resume text but icon is there
+  github: "https://github.com/paruchuriyaswanth2002", 
   summary: "Detail-oriented Full-Stack Developer with hands-on experience in designing, developing, and deploying scalable web applications. Successfully delivered 12+ live projects, specializing in React, Node.js, Express, and payment gateway integrations. Seeking opportunities to contribute to innovative teams while delivering high-quality solutions."
 };
 
