@@ -22,11 +22,11 @@ import React, { useRef, useState, useEffect } from "react";
 // ─── Per-project tech tag overrides ───────────────────────────────────────────
 // constants.ts has no techStack field on Project, so we map them manually here.
 const PROJECT_TECH: Record<string, string[]> = {
-  AriseForYou:  ["React.js", "Node.js", "PayU", "MongoDB"],
-  ClashUps:     ["React.js", "Express.js", "Razorpay", "MongoDB"],
-  Utharamenon:  ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
-  "RCM Hire":   ["React.js", "Express.js", "MySQL"],
-  DigiDoc:      ["React.js", "Vite", "Tailwind CSS"],
+  AriseForYou: ["React.js", "Node.js", "PayU", "MongoDB"],
+  ClashUps: ["React.js", "Express.js", "Razorpay", "MongoDB"],
+  Utharamenon: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
+  "RCM Hire": ["React.js", "Express.js", "MySQL"],
+  DigiDoc: ["React.js", "Vite", "Tailwind CSS"],
 };
 
 // ─── Reveal ────────────────────────────────────────────────────────────────────
@@ -227,10 +227,10 @@ export default function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className={`flex flex-col ${
-                  idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } gap-12 md:gap-24 items-center`}
+                className={`flex flex-col ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  } gap-12 md:gap-24 items-center`}
               >
+                {/* Thumbnail */}
                 {/* Thumbnail */}
                 <div className="w-full md:w-3/5 aspect-[16/10] bg-zinc-900 rounded-3xl overflow-hidden relative group cursor-pointer">
                   <div className="absolute inset-0 bg-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex items-center justify-center">
@@ -239,12 +239,20 @@ export default function App() {
                       className="text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
                     />
                   </div>
-                  <div className="w-full h-full flex items-center justify-center">
+
+                  <div className="w-full h-full flex flex-col items-center justify-center relative overflow-hidden">
+                    <span className="absolute -right-6 -bottom-10 text-[220px] md:text-[280px] font-display font-black text-zinc-800/60 select-none leading-none">
+                      {String(idx + 1).padStart(2, "0")}
+                    </span>
+                    <span className="relative z-10 text-5xl md:text-7xl font-display font-black uppercase text-zinc-700 group-hover:text-zinc-500 group-hover:scale-105 transition-all duration-700 tracking-tight px-8 text-center">
+                      {project.title}
+                    </span>
                     <Code
-                      size={80}
-                      className="text-zinc-800 group-hover:scale-110 transition-transform duration-700"
+                      size={32}
+                      className="relative z-10 text-zinc-800 mt-6 group-hover:text-blue-500 transition-colors duration-500"
                     />
                   </div>
+
                   <div className="absolute bottom-8 left-8 flex gap-2 z-20 flex-wrap">
                     {tags.slice(0, 2).map((t) => (
                       <span key={t} className="px-3 py-1 glass rounded-full text-[8px] font-black uppercase tracking-widest">
@@ -272,9 +280,8 @@ export default function App() {
                       href={project.url !== "#" ? project.url : undefined}
                       target={project.url !== "#" ? "_blank" : undefined}
                       rel="noreferrer"
-                      className={`inline-flex items-center gap-4 text-xs font-black uppercase tracking-widest group ${
-                        project.url === "#" ? "opacity-40 cursor-not-allowed pointer-events-none" : ""
-                      }`}
+                      className={`inline-flex items-center gap-4 text-xs font-black uppercase tracking-widest group ${project.url === "#" ? "opacity-40 cursor-not-allowed pointer-events-none" : ""
+                        }`}
                     >
                       View Project{" "}
                       <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">
@@ -302,10 +309,10 @@ export default function App() {
               </h2>
               <div className="grid grid-cols-2 gap-8">
                 {[
-                  { icon: Smartphone, label: "Frontend",    desc: "React.js, Vite, Tailwind CSS" },
-                  { icon: Server,     label: "Backend",     desc: "Node.js, Express.js" },
-                  { icon: Database,   label: "Database",    desc: "MongoDB, MySQL" },
-                  { icon: Cpu,        label: "Integration", desc: "Razorpay, PayU" },
+                  { icon: Smartphone, label: "Frontend", desc: "React.js, Vite, Tailwind CSS" },
+                  { icon: Server, label: "Backend", desc: "Node.js, Express.js" },
+                  { icon: Database, label: "Database", desc: "MongoDB, MySQL" },
+                  { icon: Cpu, label: "Integration", desc: "Razorpay, PayU" },
                 ].map((item, i) => (
                   <div key={i} className="space-y-4">
                     <item.icon className="text-blue-500" size={32} />
@@ -430,7 +437,7 @@ export default function App() {
 
                 <MagneticButton>
                   <a
-                    href="https://drive.google.com/file/d/1HA7_1cZpVXD-_zU486qX5JnUHZSMQScO/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1VbloG4-2qix-hTKnnkildJcqFA_GC22b/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     download
@@ -454,7 +461,7 @@ export default function App() {
               </p>
             </div>
 
-            
+
 
             <div className="space-y-12 md:text-right">
               <div>

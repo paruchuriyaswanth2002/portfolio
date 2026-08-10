@@ -2,7 +2,7 @@ import { Project, Experience, Education, Achievement } from './types';
 
 export const PERSONAL_INFO = {
   name: "Yaswanth Paruchuri",
-  title: "Full-Stack Developer",
+  title: "Software Engineer | Full Stack Developer",
   email: "paruchuriyaswanth2002@gmail.com",
   phone: "+91 9949493894",
   linkedin: "https://www.linkedin.com/in/yaswanth-paruchuri-2b3472256",
@@ -27,6 +27,16 @@ export const PROJECTS: Project[] = [
       "Independently developed a startup-pitching platform for HCLTech and Pearson’s initiative for Gen Z entrepreneurs.",
       "Scaled the platform to handle thousands of student registrations and project submissions.",
       "Integrated PayU for secure fee collection and built an automated admin dashboard for application tracking."
+    ]
+  },
+  {
+    title: "THAP",
+    role: "Full Stack Developer",
+    url: "https://thap.app/",
+    description: [
+      "Engineered backend reliability for a coaching/booking platform, wrapping payment flows in MySQL transactions to prevent partial-charge failures.",
+      "Hardened Razorpay and PhonePe webhook handlers against crash-inducing edge cases and resolved slot availability bugs affecting real-time booking accuracy.",
+      "Replaced a failing third-party invoicing dependency with a self-hosted Puppeteer-based PDF generation service and fixed critical admin dashboard reporting errors."
     ]
   },
   {
@@ -61,7 +71,7 @@ export const PROJECTS: Project[] = [
   {
     title: "DigiDoc",
     role: "Frontend Developer",
-    url: "#",
+    url: "https://digidoc.co.in/",
     description: [
       "Contributed to the development of a doctor-centric application for managing appointments, patient data, and analytics.",
       "Worked on dashboard modules featuring appointment statistics, doctor performance metrics, and analytic reports.",
@@ -72,16 +82,17 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
-    title: "Junior Software Engineer",
+    title: "Software Engineer",
     company: "Kartoffel Technologies",
     location: "Chennai, India",
-    period: "Jan 2024 - Present",
+    period: "June 2024 - Present",
     description: [
       "Architecting and maintaining scalable web applications using the MERN stack for diverse industry clients.",
       "Built and integrated RESTful APIs for seamless data flow and high performance.",
       "Spearheaded the integration of Razorpay and PayU gateways, facilitating seamless financial transactions.",
       "Optimized application performance, UI/UX responsiveness, and contributed to production deployments.",
-      "Leading live production deployments and troubleshooting critical bugs to ensure zero-downtime releases."
+      "Leading live production deployments and troubleshooting critical bugs to ensure zero-downtime releases.",
+      "Concurrently deliver across 5+ client platforms (booking, hiring, e-commerce, events) using Node.js, Express, React, TypeScript, and MySQL, alongside AWS S3/CloudFront, Firebase, and Agora for real-time and media-heavy features."
     ]
   }
 ];
