@@ -12,7 +12,7 @@ export const PERSONAL_INFO = {
 
 export const SKILLS = {
   languages: ["JavaScript", "HTML", "CSS", "TypeScript"],
-  frameworks: ["React.js", "Node.js", "Express.js", "Vite", "Tailwind CSS"],
+  frameworks: ["React.js", "Angular", "Node.js", "Express.js", "Vite", "Tailwind CSS"],
   databases: ["MongoDB", "MySQL"],
   tools: ["Git/GitHub", "Postman", "VS Code", "Google Colab"],
   competencies: ["RESTful API Development", "Payment Integration", "Cloud Deployment", "UI/UX Design"]
