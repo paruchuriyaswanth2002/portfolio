@@ -309,7 +309,7 @@ export default function App() {
               </h2>
               <div className="grid grid-cols-2 gap-8">
                 {[
-                  { icon: Smartphone, label: "Frontend", desc: "React.js, Vite, Tailwind CSS" },
+                  { icon: Smartphone, label: "Frontend", desc: "React.js, Angular, Vite, Tailwind CSS" },
                   { icon: Server, label: "Backend", desc: "Node.js, Express.js" },
                   { icon: Database, label: "Database", desc: "MongoDB, MySQL" },
                   { icon: Cpu, label: "Integration", desc: "Razorpay, PayU" },
