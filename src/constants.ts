@@ -85,7 +85,7 @@ export const EXPERIENCES: Experience[] = [
     title: "Software Engineer",
     company: "Kartoffel Technologies",
     location: "Chennai, India",
-    period: "June 2024 - Present",
+    period: "June 2023 - Present",
     description: [
       "Architecting and maintaining scalable web applications using the MERN stack for diverse industry clients.",
       "Built and integrated RESTful APIs for seamless data flow and high performance.",
